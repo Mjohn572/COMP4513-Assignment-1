@@ -1,0 +1,1 @@
+INSERT OR IGNORE INTO types (type_id, type_name) VALUES (?, ?);
