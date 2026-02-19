@@ -2,7 +2,7 @@
 
 By: Mitchell Johnson
 
-Deployed via render.com
+Deployed via render.com : https://comp4513-assignment-1-jm8r.onrender.com
 
 ## Routes to test:
 ### Artist Routes
