@@ -40,6 +40,6 @@ Deployed via render.com : https://comp4513-assignment-1-jm8r.onrender.com
 - [/api/mood/dancing/500](https://comp4513-assignment-1-jm8r.onrender.com/api/mood/dancing/500)
 - [/api/mood/dancing/ksdjf](https://comp4513-assignment-1-jm8r.onrender.com/api/mood/dancing/ksdjf)
 - [/api/mood/happy/8](https://comp4513-assignment-1-jm8r.onrender.com/api/mood/happy/8)
-- [/api/mood/happy](https://comp4513-assignment-1-jm8r.onrender.com/api/mood/happy)
+- [/api/mood/happy](https://comp4513-assignment-1-jm8r.onrender.com/api/mood/happy) - Does not work
 - [/api/mood/coffee/10](https://comp4513-assignment-1-jm8r.onrender.com/api/mood/coffee/10)
 - [/api/mood/studying/15](https://comp4513-assignment-1-jm8r.onrender.com/api/mood/studying/15)
