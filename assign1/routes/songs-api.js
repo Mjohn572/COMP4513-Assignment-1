@@ -60,8 +60,8 @@ export function songRoutes(app, db) {
         const orderMap = {
             id: 's.song_id',
             title: 's.title',
-            artist: 's.artist_name',
-            genre: 's.genre_name',
+            artist: 'a.artist_name',
+            genre: 'g.genre_name',
             year: 's.year',
             duration: 's.duration'
         };
@@ -203,7 +203,7 @@ export function songRoutes(app, db) {
             INNER JOIN genres AS g ON s.genre_id = g.genre_id
             WHERE s.title LIKE ? COLLATE NOCASE
             `).all(`${req.params.sub}%`);
-        if(!songs) return res.status(404).json({ error: `No songs beginning with: ${req.params.sub}` });
+        if(!songs.length) return res.status(404).json({ error: `No songs beginning with: ${req.params.sub}` });
 
         const result = songs.map(song => ({
             song_id: song.song_id,
@@ -287,7 +287,7 @@ export function songRoutes(app, db) {
     });
 
     // Grabs songs equal to the given year
-    app.get('/api/songs/search/:year', (req, res) => {
+    app.get('/api/songs/search/year/:num', (req, res) => {
         
         const songs = db.prepare(`
             SELECT 
@@ -312,8 +312,8 @@ export function songRoutes(app, db) {
             INNER JOIN artists AS a ON s.artist_id = a.artist_id
             INNER JOIN genres AS g ON s.genre_id = g.genre_id
             WHERE s.year = ?
-            `).all(req.params.year);
-        if(!songs) return res.status(404).json({ error: `No song found with year: ${req.params.year}` });
+            `).all(req.params.num);
+        if(!songs.length) return res.status(404).json({ error: `No song found with year: ${req.params.num}` });
 
         const result = songs.map(song => ({
             song_id: song.song_id,

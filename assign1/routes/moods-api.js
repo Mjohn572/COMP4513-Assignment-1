@@ -61,7 +61,7 @@ export function moodRoutes(app, db) {
     })
 
     // Grabs songs within the given limit, (up to 20), with the best valence components to it
-    app.get('/api/mood/valence/:num', (req, res) => {
+    app.get('/api/mood/happy/:num', (req, res) => {
 
         let limit = parseInt(req.params.num);
 
