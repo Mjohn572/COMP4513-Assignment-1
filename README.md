@@ -9,7 +9,7 @@ Deployed via render.com
 - [/api/artists](https://comp4513-assignment-1-jm8r.onrender.com/api/artists)
 - [/api/artists/129](https://comp4513-assignment-1-jm8r.onrender.com/api/artists/129)
 - [/api/artists/sdfjkhsdf](https://comp4513-assignment-1-jm8r.onrender.com/api/artists/sdfjkhsdf)
-- [/api/artists/averages/129](https://comp4513-assignment-1-jm8r.onrender.com/api/artists/averages/129)
+- [/api/artists/averages/129](https://comp4513-assignment-1-jm8r.onrender.com/api/artists/averages/129) NOTE: Added num_songs field 
 
 ### Genre Route
 - [/api/genres](https://comp4513-assignment-1-jm8r.onrender.com/api/genres)
