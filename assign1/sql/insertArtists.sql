@@ -1,1 +1,0 @@
-INSERT OR IGNORE INTO artists (artist_id, artist_name, artist_type, artist_image_url, spotify_url, spotify_desc) VALUES (?, ?, ?, ?, ?, ?);

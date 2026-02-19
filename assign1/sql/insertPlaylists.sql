@@ -1,1 +1,0 @@
-INSERT OR IGNORE INTO playlists(id, playlist_id, song_id) VALUES(?, ?, ?);

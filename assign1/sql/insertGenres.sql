@@ -1,1 +1,0 @@
-INSERT OR IGNORE INTO genres(genre_id, genre_name) VALUES(?, ?);
