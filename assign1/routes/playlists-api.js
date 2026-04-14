@@ -14,7 +14,7 @@ export function playlistRoutes(app, db) {
             INNER JOIN artists as a ON s.artist_id = a.artist_id
             INNER JOIN genres as g ON s.genre_id = g.genre_id
             `).all();
-        if(!playlists.length) return res.status(404).json({ error: `No Playlists Found` });
+        if(!rows.length) return res.status(404).json({ error: `No Playlists Found` });
         // Group rows by playlist_id
         const grouped = rows.reduce((acc, row) => {
             // If this playlist_id hasn't been seen yet, create it
@@ -39,8 +39,9 @@ export function playlistRoutes(app, db) {
 
         // Convert the object into an array
         const playlists = Object.values(grouped);
-
+        console.log(playlists);
         res.json(playlists);
+        
     })
     
     // Grabs playlists with given ID
