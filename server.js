@@ -7,7 +7,6 @@ import { playlistRoutes } from './assign1/routes/playlists-api.js';
 import { moodRoutes } from './assign1/routes/moods-api.js';
 import cors from 'cors';
 
-const cors = require('cors');
 // Imports db
 const db = new DatabaseSync('./assign1/data/songs-2026.db');
 const app = express();
