@@ -5,7 +5,7 @@ import { genreRoutes } from './assign1/routes/genres-api.js';
 import { songRoutes } from './assign1/routes/songs-api.js';
 import { playlistRoutes } from './assign1/routes/playlists-api.js';
 import { moodRoutes } from './assign1/routes/moods-api.js';
-
+import cors from 'cors';
 
 const cors = require('cors');
 // Imports db
