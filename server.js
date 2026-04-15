@@ -6,10 +6,12 @@ import { songRoutes } from './assign1/routes/songs-api.js';
 import { playlistRoutes } from './assign1/routes/playlists-api.js';
 import { moodRoutes } from './assign1/routes/moods-api.js';
 
+
+const cors = require('cors');
 // Imports db
 const db = new DatabaseSync('./assign1/data/songs-2026.db');
 const app = express();
-
+app.use(cors({ origin: 'https://comp4513-assignment-2.onrender.com' }));
 // Grabs routes based on what needs to happen
 artistRoutes(app, db);
 genreRoutes(app, db);
